@@ -77,6 +77,7 @@ create table voyage
     intercontinental boolean,
     debut            date,
     fin              date,
+    voyageur         integer,
     constraint intercontiental
         check (((intercontinental = true) AND (distance >= 1000)) OR (intercontinental <> true))
 );
