@@ -1,3 +1,14 @@
+drop table if exists nation cascade;
+drop table if exists relation_diplo cascade;
+drop table if exists navires cascade;
+drop table if exists ports cascade;
+drop table if exists voyage cascade;
+drop table if exists produits cascade;
+drop table if exists cargaison cascade;
+drop table if exists "etape transitoire" cascade;
+
+
+
 create table nation
 (
     nom       char(20),
@@ -103,8 +114,6 @@ create table "etape transitoire"
     ordre               integer,
     changement_passager integer
 );
-
-
 
 
 
